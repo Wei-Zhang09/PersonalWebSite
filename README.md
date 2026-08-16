@@ -28,7 +28,7 @@ Place approved CleanMaster screenshots in:
 assets/cleanmaster/screenshots/
 ```
 
-Then replace the concept UI in `index.html` with the real product image.
+The current approved CleanMaster screenshot is already integrated into `index.html`.
 
 ## Deployment
 

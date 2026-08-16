@@ -10,7 +10,7 @@ Make the work feel intentional and product-led, then direct visitors to the Clea
 - Bilingual Chinese/English content with a persistent language switch.
 - Mr Z identity: independent maker of approachable Windows utilities.
 - One selected project: CleanMaster.
-- Product preview uses an original interface concept until the user supplies a real screenshot.
+- Product preview uses the approved CleanMaster disk cleanup screenshot stored at `assets/cleanmaster/screenshots/52fd3fae-a51d-4366-a992-a8b94462df69.png`.
 - GitHub profile and CleanMaster repository links.
 
 ## Exclusions
