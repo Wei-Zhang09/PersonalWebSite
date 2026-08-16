@@ -5,6 +5,7 @@
 - Delivery model: standalone static HTML with embedded CSS and JavaScript.
 - Content modes: Simplified Chinese and English; selection persists in localStorage under `mr-z-language`.
 - Product image: approved CleanMaster disk-cleanup screenshot at `assets/cleanmaster/screenshots/52fd3fae-a51d-4366-a992-a8b94462df69.png`; displayed with `contain` so the complete desktop interface remains visible.
+- Product expansion: CleanMaster v2.3.0 direct installer link, four source-verified capabilities, product origin narrative, public technical stack, and contact email are present.
 
 ## Validation performed
 - `npx --yes html-validate index.html` — passed (exit code 0).

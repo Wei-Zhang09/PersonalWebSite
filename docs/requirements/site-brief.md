@@ -11,6 +11,9 @@ Make the work feel intentional and product-led, then direct visitors to the Clea
 - Mr Z identity: independent maker of approachable Windows utilities.
 - One selected project: CleanMaster.
 - Product preview uses the approved CleanMaster disk cleanup screenshot stored at `assets/cleanmaster/screenshots/52fd3fae-a51d-4366-a992-a8b94462df69.png`.
+- CleanMaster product details: v2.3.0 download button, source link, core capabilities, and an origin story grounded in the C: drive storage problem.
+- Developer section: publicly listed stack is C#, .NET 9, WPF, MVVM, dependency injection, and Windows desktop development.
+- Contact: `mailto:2767201026@qq.com` and GitHub profile link.
 - GitHub profile and CleanMaster repository links.
 
 ## Exclusions

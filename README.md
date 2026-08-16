@@ -28,8 +28,7 @@ Place approved CleanMaster screenshots in:
 assets/cleanmaster/screenshots/
 ```
 
-The current approved CleanMaster screenshot is already integrated into `index.html`.
-
+The current approved CleanMaster screenshot is integrated into `index.html`, and the v2.3.0 Gitee installer is linked as the primary download action. The page also exposes the verified source repository, capability overview, product origin, public technology stack, contact email, and GitHub profile.
 ## Deployment
 
 The repository is prepared for GitHub Pages with `CNAME` set to `awesoftware.dpdns.org`.
