@@ -1,0 +1,15 @@
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Local scratch files
+*.tmp
+*.bak
+*.swp
+
+# Do not ignore approved website assets in assets/
