@@ -3,7 +3,7 @@
 <a class="skip" href="#content" data-lang="zh">跳到主要内容</a>
 <a class="skip" href="#content" data-lang="en">Skip to content</a>
 <header class="topbar">
-  <nav class="nav wrap" aria-label="Primary navigation">
+  <nav class="nav wrap" aria-label="网站主导航" data-nav-label-zh="网站主导航" data-nav-label-en="Primary navigation">
     <a class="wordmark" href="#top"><i></i>MR Z / SOFTWARE</a>
     <div class="nav-links">
       <a href="#work"><span data-lang="zh">作品</span><span data-lang="en">Work</span></a>
@@ -22,6 +22,8 @@
     root.lang = english ? 'en' : 'zh-CN';
     toggle.textContent = english ? '中文' : 'EN';
     toggle.setAttribute('aria-label', english ? '切换至中文' : 'Switch to English');
+    const nav = document.querySelector('[data-nav-label-zh]');
+    nav.setAttribute('aria-label', english ? nav.dataset.navLabelEn : nav.dataset.navLabelZh);
     localStorage.setItem(key, english ? 'en' : 'zh');
   }
   setLanguage(localStorage.getItem(key) || 'zh');

@@ -35,7 +35,7 @@ export const cleanMaster = {
   technology: 'WPF · .NET 9 · C#',
   sourceUrl: 'https://github.com/Wei-Zhang09/CleanMaster',
   downloadUrl: 'https://gitee.com/zhang_we/clean-master/releases/download/2.3.0/CleanMaster-Setup-v2.3.0.exe',
-  screenshot: '/assets/cleanmaster/screenshots/52fd3fae-a51d-4366-a992-a8b94462df69.png',
+  screenshot: 'assets/cleanmaster/screenshots/52fd3fae-a51d-4366-a992-a8b94462df69.png',
   summary: {
     zh: '一款面向新手的 Windows 磁盘清理工具。它把杂乱的维护任务变成清晰的分类、可理解的结果与受控的操作，让释放空间不再是一场猜测。',
     en: 'A beginner-friendly Windows disk cleanup tool. It turns opaque maintenance into clear categories, understandable results, and controlled actions — no guesswork required.',

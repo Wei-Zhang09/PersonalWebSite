@@ -10,7 +10,9 @@
 ## Validation performed
 - `npm run check` — Astro/TypeScript diagnostics passed with 0 errors, 0 warnings, and 0 hints.
 - `npm run build` — static production build passed and emitted `dist/index.html`.
+- `GITHUB_ACTIONS=true npm run build` — repository Pages build passed with relative asset paths.
 - Build artifact check — `dist/CNAME` and the CleanMaster screenshot exist.
+- HTTP smoke check — Astro dev output includes the download URL, contact email, and screenshot path.
 
 ## Visual verification limitation
 The isolated browser automation runtime has no installed Chrome binary. A screenshot-based visual pass could not be performed in that runtime. Run `npm run dev` or `npm run preview` locally to review desktop and mobile rendering before publishing.
