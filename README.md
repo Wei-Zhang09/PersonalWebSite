@@ -1,23 +1,40 @@
 # Mr Z Portfolio
 
-A bilingual static portfolio for **Mr Z**, focused on CleanMaster and approachable Windows utilities.
+A bilingual Astro portfolio for **Mr Z**, focused on CleanMaster and approachable Windows utilities.
 
-## Local preview
-
-Open `index.html` directly in a browser.
-
-## Validate
+## Local Development
 
 ```sh
-npx --yes html-validate index.html
+npm install
+npm run dev
 ```
 
-## Project documentation
+## Verification
+
+```sh
+npm run check
+npm run build
+npm run preview
+```
+
+`npm run build` writes a fully static site to `dist/`. The production build includes `CNAME` and the CleanMaster screenshot from `public/`.
+
+## Content Maintenance
+
+The main portfolio content is structured in [`src/data/site.ts`](src/data/site.ts):
+
+- CleanMaster version, download URL, source URL, screenshot, capabilities, and origin story.
+- Mr Z profile, contact email, GitHub URL, technology stack, and hero text.
+
+Page sections live under `src/components/`; site-wide styling is in `src/styles/global.css`.
+
+## Project Documentation
 
 Start at [`docs/README.md`](docs/README.md):
 
 - Requirements: `docs/requirements/site-brief.md`
 - Visual direction: `docs/design/visual-direction.md`
+- Architecture decisions: `docs/architecture/adr/`
 - Validation baseline: `docs/discovery/baseline.md`
 
 ## Assets
@@ -25,19 +42,19 @@ Start at [`docs/README.md`](docs/README.md):
 Place approved CleanMaster screenshots in:
 
 ```text
-assets/cleanmaster/screenshots/
+public/assets/cleanmaster/screenshots/
 ```
 
-The current approved CleanMaster screenshot is integrated into `index.html`, and the v2.3.0 Gitee installer is linked as the primary download action. The page also exposes the verified source repository, capability overview, product origin, public technology stack, contact email, and GitHub profile.
+The current approved CleanMaster screenshot is exposed by the data module, while the v2.3.0 Gitee installer is the primary download action.
+
 ## Deployment
 
-The repository is prepared for GitHub Pages with `CNAME` set to `awesoftware.dpdns.org`.
+Pushing to `main` runs [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml). GitHub Actions builds the Astro site and deploys the `dist/` artifact to GitHub Pages.
 
-After the first push:
+The custom domain is preserved by `public/CNAME`:
 
-1. In GitHub, open **Settings → Pages** and set the publishing source to the repository's default branch at `/ (root)`.
-2. Keep the custom domain as `awesoftware.dpdns.org` and wait for GitHub to validate it.
-3. In the DigitalPlat Domain dashboard, configure the DNS record(s) GitHub Pages displays for this custom domain.
-4. Enable **Enforce HTTPS** after DNS propagation and GitHub certificate issuance complete.
+```text
+awesoftware.dpdns.org
+```
 
-Do not change DNS records until GitHub Pages supplies its verification instructions.
+GitHub Pages must be set to **GitHub Actions** as its publishing source. After the first workflow deployment, keep the custom domain and HTTPS enforcement enabled in repository settings.

@@ -1,3 +1,7 @@
+node_modules/
+dist/
+.astro/
+
 # Operating system
 .DS_Store
 Thumbs.db
@@ -11,5 +15,3 @@ desktop.ini
 *.tmp
 *.bak
 *.swp
-
-# Do not ignore approved website assets in assets/

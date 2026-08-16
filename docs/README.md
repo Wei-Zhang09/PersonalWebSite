@@ -8,11 +8,13 @@ This static bilingual portfolio presents Mr Z as an independent Windows utility 
 - `design/visual-direction.md` — original visual direction and reference constraints.
 
 ## Change rule
-When a user-visible page, copy, project link, or visual system changes, update the relevant document with `index.html`.
+When a user-visible page, copy, project link, or visual system changes, update the relevant document with the affected Astro component or `src/data/site.ts`.
 
 ## Local validation
-- HTML: `npx --yes html-validate index.html`
-- Open `index.html` in a browser and check Chinese/English switching, links, and mobile layout.
+- `npm run check` for Astro and TypeScript diagnostics.
+- `npm run build` for a production static build.
+- `npm run preview` to inspect the generated site locally.
+- Check Chinese/English switching, project links, download button, email link, and mobile layout.
 
 ## Deployment
-The repository includes `CNAME` for `awesoftware.dpdns.org` and is prepared for GitHub Pages. GitHub Pages itself and the corresponding DNS records have not yet been configured or verified. Before launch, enable Pages in GitHub, apply the DNS records GitHub provides in the DigitalPlat Domain dashboard, then wait for domain and HTTPS validation.
+The repository uses [`.github/workflows/deploy-pages.yml`](../.github/workflows/deploy-pages.yml) to build and publish the Astro `dist/` output. GitHub Pages must use **GitHub Actions** as its publishing source. `public/CNAME` preserves `awesoftware.dpdns.org`; keep the custom domain and HTTPS enforcement enabled after the next successful workflow run.

@@ -1,0 +1,29 @@
+---
+---
+<a class="skip" href="#content" data-lang="zh">跳到主要内容</a>
+<a class="skip" href="#content" data-lang="en">Skip to content</a>
+<header class="topbar">
+  <nav class="nav wrap" aria-label="Primary navigation">
+    <a class="wordmark" href="#top"><i></i>MR Z / SOFTWARE</a>
+    <div class="nav-links">
+      <a href="#work"><span data-lang="zh">作品</span><span data-lang="en">Work</span></a>
+      <a href="#about"><span data-lang="zh">方法</span><span data-lang="en">Approach</span></a>
+      <a href="#contact"><span data-lang="zh">联系</span><span data-lang="en">Contact</span></a>
+      <button class="lang" id="language-toggle" type="button" aria-label="Switch language">EN</button>
+    </div>
+  </nav>
+</header>
+<script is:inline>
+  const root = document.documentElement;
+  const toggle = document.querySelector('#language-toggle');
+  const key = 'mr-z-language';
+  function setLanguage(language) {
+    const english = language === 'en';
+    root.lang = english ? 'en' : 'zh-CN';
+    toggle.textContent = english ? '中文' : 'EN';
+    toggle.setAttribute('aria-label', english ? '切换至中文' : 'Switch to English');
+    localStorage.setItem(key, english ? 'en' : 'zh');
+  }
+  setLanguage(localStorage.getItem(key) || 'zh');
+  toggle.addEventListener('click', () => setLanguage(root.lang === 'zh-CN' ? 'en' : 'zh'));
+</script>

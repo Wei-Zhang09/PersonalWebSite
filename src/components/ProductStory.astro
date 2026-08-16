@@ -1,0 +1,10 @@
+---
+import { cleanMaster } from '../data/site';
+---
+<section id="capabilities">
+  <div class="wrap section-head"><h2><span data-lang="zh">核心能力</span><span data-lang="en">Core capabilities</span></h2><p data-lang="zh">把系统维护拆成普通用户可以理解和控制的几个动作。</p><p data-lang="en">A small set of understandable, controlled actions for everyday system maintenance.</p></div>
+  <div class="wrap capabilities"><div class="capability-list">
+    {cleanMaster.capabilities.map((capability, index) => <article class="capability"><span class="capability-no">{String(index + 1).padStart(2, '0')}</span><h3 data-lang="zh">{capability.title.zh}</h3><h3 data-lang="en">{capability.title.en}</h3><p data-lang="zh">{capability.description.zh}</p><p data-lang="en">{capability.description.en}</p></article>)}
+  </div></div>
+</section>
+<section class="origin" id="origin"><div class="wrap origin-grid"><h2><span data-lang="zh">为什么做它</span><span data-lang="en">Why CleanMaster</span></h2><div><p class="origin-copy" data-lang="zh">{cleanMaster.origin.title.zh}</p><p class="origin-copy" data-lang="en">{cleanMaster.origin.title.en}</p><p class="origin-note" data-lang="zh">{cleanMaster.origin.copy.zh}</p><p class="origin-note" data-lang="en">{cleanMaster.origin.copy.en}</p></div></div></section>

@@ -1,0 +1,16 @@
+---
+import { profile } from '../data/site';
+---
+<section class="wrap hero" id="top" aria-labelledby="hero-title">
+  <div>
+    <p class="kicker" data-lang="zh">{profile.hero.kicker.zh}</p>
+    <p class="kicker" data-lang="en">{profile.hero.kicker.en}</p>
+    <h1 id="hero-title"><span data-lang="zh">{profile.hero.title.zh}<em>{profile.hero.emphasis.zh}</em></span><span data-lang="en">{profile.hero.title.en} <em>{profile.hero.emphasis.en}</em></span></h1>
+    <p class="folio">MR Z / PORTFOLIO · 2026</p>
+  </div>
+  <div class="hero-bottom">
+    <p data-lang="zh">{profile.hero.copy.zh}</p>
+    <p data-lang="en">{profile.hero.copy.en}</p>
+    <a class="text-link" href="#work"><span data-lang="zh">查看作品</span><span data-lang="en">View selected work</span></a>
+  </div>
+</section>

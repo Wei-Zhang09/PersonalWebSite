@@ -1,0 +1,24 @@
+---
+import { cleanMaster } from '../data/site';
+---
+<section id="work">
+  <div class="wrap section-head"><h2><span data-lang="zh">精选作品</span><span data-lang="en">Selected work</span></h2><p data-lang="zh">从实际问题出发，做能够被理解、被信任的软件。</p><p data-lang="en">Software shaped around real problems — understandable before it asks for trust.</p></div>
+  <article class="wrap work" aria-labelledby="cleanmaster-title">
+    <div class="work-grid">
+      <div>
+        <span class="work-no">01 / {cleanMaster.category}</span>
+        <h3 id="cleanmaster-title">{cleanMaster.name}</h3>
+        <p class="work-copy" data-lang="zh">{cleanMaster.summary.zh}</p><p class="work-copy" data-lang="en">{cleanMaster.summary.en}</p>
+        <div class="specs">
+          <div class="spec"><b data-lang="zh">平台</b><b data-lang="en">Platform</b><span>{cleanMaster.platform}</span></div>
+          <div class="spec"><b data-lang="zh">构建</b><b data-lang="en">Built with</b><span>{cleanMaster.technology}</span></div>
+          <div class="spec"><b data-lang="zh">状态</b><b data-lang="en">Status</b><span>v{cleanMaster.version}</span></div>
+          <div class="spec"><b data-lang="zh">原则</b><b data-lang="en">Principle</b><span data-lang="zh">{cleanMaster.principle.zh}</span><span data-lang="en">{cleanMaster.principle.en}</span></div>
+        </div>
+        <a class="download-link" href={cleanMaster.downloadUrl} target="_blank" rel="noreferrer"><span data-lang="zh">下载 CleanMaster v{cleanMaster.version}</span><span data-lang="en">Download CleanMaster v{cleanMaster.version}</span></a>
+        <a class="text-link" href={cleanMaster.sourceUrl} target="_blank" rel="noreferrer"><span data-lang="zh">查看源代码</span><span data-lang="en">View source</span></a>
+      </div>
+      <div><div class="screen-shell"><div class="screen-meta"><span>CleanMaster / screenshot</span><span>Disk cleanup</span></div><div class="screen"><img src={cleanMaster.screenshot} alt="CleanMaster disk cleanup interface screenshot" /></div></div><p class="caption" data-lang="zh">CleanMaster 磁盘清理界面实拍。</p><p class="caption" data-lang="en">Live CleanMaster disk cleanup interface.</p></div>
+    </div>
+  </article>
+</section>

@@ -18,10 +18,10 @@ Make the work feel intentional and product-led, then direct visitors to the Clea
 
 ## Exclusions
 - No invented adoption numbers, testimonials, press coverage, pricing, client logos, or performance claims.
-- No blog, CMS, contact form, analytics, or deployment automation in this iteration.
+- No blog, CMS, contact form, analytics, or server-side runtime in this iteration.
 
 ## Acceptance criteria
-- The page is responsive and directly openable as static HTML.
+- The site builds as a static Astro output and deploys through GitHub Actions.
 - Every interactive control works with keyboard navigation.
 - Chinese and English content switch together and preference persists locally.
 - CleanMaster source link points to `https://github.com/Wei-Zhang09/CleanMaster`.
