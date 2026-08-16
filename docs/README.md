@@ -15,4 +15,4 @@ When a user-visible page, copy, project link, or visual system changes, update t
 - Open `index.html` in a browser and check Chinese/English switching, links, and mobile layout.
 
 ## Deployment
-Deployment and DNS records are intentionally not configured yet. `awesoftware.dpdns.org` must point to the selected static host before launch.
+The repository includes `CNAME` for `awesoftware.dpdns.org` and is prepared for GitHub Pages. GitHub Pages itself and the corresponding DNS records have not yet been configured or verified. Before launch, enable Pages in GitHub, apply the DNS records GitHub provides in the DigitalPlat Domain dashboard, then wait for domain and HTTPS validation.
