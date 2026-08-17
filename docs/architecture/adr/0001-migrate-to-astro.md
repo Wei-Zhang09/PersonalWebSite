@@ -16,6 +16,7 @@ Migrate to Astro with TypeScript and static output.
 - Keep language switching as small client-side JavaScript with localStorage persistence.
 - Build static output in GitHub Actions and deploy it to GitHub Pages.
 - Preserve `CNAME` in the built site so the custom domain remains attached.
+- Treat `https://awesoftware.dpdns.org/` as the single production URL. The default repository Pages URL is a diagnostic fallback only and is not required to render the production asset paths.
 
 ## Consequences
 Positive:
