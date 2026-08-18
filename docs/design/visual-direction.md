@@ -1,27 +1,22 @@
-# Visual Direction: Night Utility Journal
+# Visual Direction: Liquid Glass Utility Journal
 
 ## Surface
 **Decide / Learn.** The visitor should first understand Mr Z's product posture, then inspect CleanMaster.
 
 ## Reference interpretation
-The user selected huasheng.ai as a reference. Use only general principles:
-
-- Dark, editorial presentation with generous negative space.
-- Strong single-message headline and compact metadata.
-- Numbered, sequential project storytelling.
-- Distinct end-of-page contact moment.
-
-Do not copy its brand marks, typography choices, wording, project listing patterns, exact section order, metrics presentation, or visual assets.
+The liquid-glass direction is based on `D:\HermesWorkSpace\novelIDE\ToLiquidGlass.md`. The implementation uses its material, hierarchy, lighting, radius, motion and performance principles rather than treating glass as a generic translucent card style.
 
 ## Original system
-- Canvas: near-black ink, warm off-white text, muted stone text.
-- Accent: acid-lime used only for controls, active marks, and interface state.
-- Type: system sans for every Chinese display line to prevent browser fallback mismatch. Georgia is permitted only for emphasized English text.
-- Composition: thin rules, a calibrated grid, technical labels, and one approved CleanMaster product screenshot.
+- Canvas: cool white / grey-blue environment with two soft ambient light fields; the background remains a non-glass Level 0 surface.
+- Glass hierarchy: Level 1 for navigation and ordinary content surfaces, Level 2 for the CleanMaster case panel, Level 3 for the active language control and primary CTA. Solid content zones remain to preserve readability.
+- Material: low-opacity white surfaces, blur + saturation, top-left inner highlight, low-contrast borders, layered soft shadows, and a left-top unified light source.
+- Accent: restrained cobalt blue used for CTAs, active states, links and metadata only.
+- Type: system sans for Chinese and general UI; Georgia is permitted only for emphasized English text.
+- Radius: 10px controls, 18px cards, 26px content panels, 32px floating surfaces.
+- Composition: asymmetric editorial hero, product screenshot as visual anchor, sequential case narrative, method rows and a distinct contact moment.
 - Content posture: show real capabilities and a direct download path, but avoid invented adoption, performance, or roadmap claims.
-- Motion: subtle reveal only; honor `prefers-reduced-motion`.
-- Hero density: cap the first viewport at 760px and use a 54–82px top offset, so opening space frames the message without looking like missing content.
+- Motion: short, low-amplitude hover and press transitions only; honor `prefers-reduced-motion`.
+- Fallback: `@supports` fallback replaces blur-dependent glass with opaque light surfaces.
 
 ## Anti-slop self-audit
-Initial prior layout: 3/10 (generic tech blue, software mockup, default type risk).
-Target: 0/10. No tech gradient, generic feature-tile grid, center-stacked layout, icon toppers, invented metrics, or unearned blur.
+The liquid-glass redesign intentionally avoids the common failure mode of applying identical glass to every element. Current risk score: 1/10 — blur is used in several hierarchical surfaces, but it is supported by a real Level 0 background, different material strengths, solid text zones and an opaque fallback. There are no invented metrics, generic feature tiles, neon gradients or icon-topper cards.
