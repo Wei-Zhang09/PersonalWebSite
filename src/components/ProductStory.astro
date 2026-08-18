@@ -7,4 +7,9 @@ import { cleanMaster } from '../data/site';
     {cleanMaster.capabilities.map((capability, index) => <article class="capability"><span class="capability-no">{String(index + 1).padStart(2, '0')}</span><h3 data-lang="zh">{capability.title.zh}</h3><h3 data-lang="en">{capability.title.en}</h3><p data-lang="zh">{capability.description.zh}</p><p data-lang="en">{capability.description.en}</p></article>)}
   </div></div>
 </section>
-<section class="origin" id="origin"><div class="wrap origin-grid"><h2><span data-lang="zh">为什么做它</span><span data-lang="en">Why CleanMaster</span></h2><div><p class="origin-copy" data-lang="zh">{cleanMaster.origin.title.zh}</p><p class="origin-copy" data-lang="en">{cleanMaster.origin.title.en}</p><p class="origin-note" data-lang="zh">{cleanMaster.origin.copy.zh}</p><p class="origin-note" data-lang="en">{cleanMaster.origin.copy.en}</p></div></div></section>
+<section class="story-section why-section" id="origin" aria-labelledby="origin-heading">
+  <div class="wrap story-grid">
+    <div class="story-label"><span class="story-index">02</span><h2 id="origin-heading"><span data-lang="zh">为什么做它</span><span data-lang="en">Why CleanMaster</span></h2></div>
+    <div class="story-main"><p class="story-lead" data-lang="zh">{cleanMaster.origin.title.zh}</p><p class="story-lead" data-lang="en">{cleanMaster.origin.title.en}</p><p class="story-body" data-lang="zh">{cleanMaster.origin.copy.zh}</p><p class="story-body" data-lang="en">{cleanMaster.origin.copy.en}</p></div>
+  </div>
+</section>
